@@ -1,0 +1,106 @@
+:root {
+    --darkest: #2e3440;
+    --block: #3b4252;
+    --buttons: #434c5e;
+    --code: #4c566a;
+    --text: #d8dee9;
+    --keyword: #81a1c1;
+    --def: #8fbcbb;
+    --string: #a3be8c;
+    --meta: #d08770;
+    --builtin: #88c0d0;
+    --number: #b48ead;
+    --comment: #616e88;
+}
+
+#notebook,
+#header-container,
+#menus,
+.navbar,
+#notebook-container,
+div#header[role="navigation"][aria-label="Top Menu"] {
+    background: var(--darkest);
+    color: var(--text);
+}
+
+.text_cell_render.rendered_html {
+    background: var(--block);
+    color: var(--text);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.prompt.input_prompt,
+.prompt_container {
+    background: var(--block);
+    color: var(--text);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.dropdown,
+.navbar-nav a {
+    background: var(--block) !important;
+    color: var(--text) !important;
+}
+
+/*stuff to hide*/
+.header-bar {
+    display: none;
+}
+
+.CodeMirror {
+    background: var(--darkest);
+    color: var(--def);
+}
+
+/* code color scheme*/
+.cm-keyword {
+    color: var(--keyword) !important;
+}
+
+.cm-def {
+    color: var(--def) !important;
+}
+
+.cm-string {
+    color: var(--string) !important;
+}
+
+.cm-variable-2 {
+    color: var(--keyword) !important;
+}
+
+.cm-variable {
+    color: var(--text) !important;
+}
+
+.cm-property {
+    color: var(--text)
+}
+
+.cm-operator {
+    color: var(--keyword) !important
+}
+
+.cm-meta {
+    color: #d08770 !important;
+}
+
+.cm-builtin {
+    color: var(--builtin) !important;
+}
+
+.cm-number {
+    color: var(--number) !important;
+}
+
+.cm-comment {
+    color: var(--comment) !important;
+}
+
+code,
+pre {
+    background: var(--darkest) !important;
+    color: var(--text) !important;
+}
